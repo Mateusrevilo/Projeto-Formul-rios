@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <div class="container">     
+            <div class="header">
+            <h3> Cadatre seu veículo para vender mais rápido!</h3>
+        </div>
+        
+        <form>
+            <div class="form_container">
+            <div class="form-header">
+               <p>Formulário</p>
+            </div>
+            <div class="form-body">
+               <h1 class="form-title"> Venda fácil seu carro!</h1>
+               <p>Descreva as características e marque os opcionais que ele possui</p>
+            </div>
+            <div class="box-form">
+                <label for="title"> Tipo de anúncio:</label>
+                <input type="text" placeholder="anúncie seu carro aqui" required class="block" id="title" name="title">             
+            </div>
+           <div class="form-price">
+            <label for="price">Preço:</label>
+            <input type="number" placeholder="Defina o preço"required class="block" name="price">
+           </div>
+           <div class="form-description">
+            <label for="description">Descrição do veículo:</label>
+            <textarea name="coment" placeholder="Aqui você coloca os detalhes do seu veículo, por exemplo se ele tem algum arranhão" required></textarea>
+           </div>
+           <div class="form-emblem">
+            <label for="emblem"> Qual é a marca do seu carro:</label>
+            <input type="text" placeholder="Digite a mara do seu veículo" required>
+           </div>
+           <div class="form-model"> 
+            <label for="model"> Qual é o modelo:</label>
+            <input type="text" placeholder="Qual o modelo do seu carro" required>
+           </div>
+           <div class="form-mileage">
+             <label for="mileage"> Quilometragem:</label>
+             <input type="number" placeholder=" Digite o número da quilometragem" required>
+           </div>
+           <div class="from-date">
+            <label for="date-buy">Data de compra:</label>
+            <input type="date" name="date-buy">
+           </div>
+           <div>
+            <label for="exchange">Tipo de câmbio:</label>
+            <div class="radio">
+              <label for="manual"> Manual</label>
+              <input type="radio" name="manual" value="exchange">
+              <label for="automatic">Automático</label>
+             <input type="radio" name="automatic" value="exchange">
+            </div>
+           </div>
+           <div>
+            <label for="optnails">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optnails[]" value="airbag">
+                <label for="airbag">Arbag</label>
+                <input type="checkbox" name="optnails[]" value="alarme">
+                <label for="alarme">Alarme</label>
+           </div>
+           <div>
+            <input type="checkbox" name="optnails[]" value="ar">
+            <label for="ar">Ar-condicionado</label>
+            <input type="checkbox" name="optnails[]" value="camera">
+            <label for="camera">Camera traseira</label>
+           </div>
+             <div>
+                <input type="checkbox" name="optnails" value="assistent">
+                <label for="assistent"> Assistente de pista</label>
+                <input type="checkbox" name="opcionais" name="leather">
+                <label for="leather">Banco de couro</label>
+             </div>               
+             <div>
+                <input type="checkbox" name="optnails" value="start">
+                <label for="start">Start</label>
+                <input type="checkbox" name="optnails" value="interaction">
+                <label for="interaction"> interação com celular</label>
+             </div>
+             <div>
+                <label for="imagem"> Fotos do carro:</label>
+                <input type="file" name="imagem">
+             </div>
+
+             <input type="button" value="Cadastrar">
+             </div>
+        </div></form>
+
+        
+    </div>
+</body>
+</html>
